@@ -16,7 +16,7 @@ name: Bicep deploy template
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: '<service-connection-name>'
+    azureSubscription: 'AH-AzureRmPipeline-conn'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
