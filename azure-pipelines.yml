@@ -10,13 +10,13 @@ trigger:
 
 pool:
   vmImage: $(vmImageName)
-  
-  name: Bicep deploy template
+
+name: Bicep deploy template
 
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'AH-AzureRmPipeline-conn'
+    azureSubscription: '<service-connection-name>'
     scriptType: bash
     scriptLocation: inlineScript
     inlineScript: |
